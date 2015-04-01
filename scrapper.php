@@ -13,7 +13,7 @@ if(isset($_GET['city'])){
 $content = file_get_contents("http://www.weather-forecast.com/locations/" .$city ."/forecasts/latest");
 
 //sing regex to scrap 3 days weather prediction
-preg_match("/3 Day Weather Forecast Summary:<\/b>(.*?)<\/span>/s", $content, $match);
+preg_match('/3 Day Weather Forecast Summary:<\/b><span class="read-more-small"><span class="read-more-content"> <span class="phrase">(.*?)<\/span>/s', $content, $match);
 print_r($match[1]);
 
 ?>

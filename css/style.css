@@ -8,7 +8,7 @@ html,body{
 	height: 100%;
 	background-size: cover;
 	background-position: center;
-	padding-top: 130px;
+	padding-top: 110px;
 }
 
 .center{
@@ -32,4 +32,9 @@ html,body{
 
 .form button{
 	margin-top: 15px; 
+}
+
+.alert{
+	margin-top: 20px; 
+	display: none;
 }
